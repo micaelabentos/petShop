@@ -1,0 +1,324 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Barra negra superior  */
+
+.header-top {
+    height: 50px;
+    width: 100%;
+    background-color: #222222;
+    color: #F3F3F3; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    padding: 30px;
+}
+.header-top-opciones select{
+    background-color: #222222;
+    color: #F3F3F3;
+    border: 0;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* Barra naranja con logo y nav superior */
+
+.navegacion {
+    height: 90px;
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navegacion img {
+    width: 270px;
+    height: 40px;
+    margin: 20px;
+}
+.nav-bar li{
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+}
+.nav-bar i {
+    margin: 3px;
+}
+.nav-bar a {
+    text-decoration: none;
+    color:#F3F3F3;
+}
+
+
+
+
+
+/* Section con imagen */
+
+.banner {
+    height: 600px;
+    background-image: url(/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.banner div {
+    height: 300px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.banner h2 {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: #3C2313;
+    background-color: #ffffff;
+    font-weight: 400;
+    border-radius: 5px;
+}
+.banner h3 {
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #3C2313;
+}
+.banner button {
+    width: 160px;
+    height: 60px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+    background-color: #F0A83E;
+    border: 0;
+    border-radius: 5px;
+}
+
+
+/* Section de productos destacados */
+
+.section-top-productos {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.section-top-productos img {
+    width: 70px;
+    height: 74px;
+}
+.section-top-productos h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #3C2313;
+}
+.container-links-productos{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+.container-links-productos span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+}
+.container-links-productos a {
+    text-decoration: none;
+    color: #666666;
+}  
+.container-cards {
+    display: flex;
+    justify-content: center;
+}
+.card-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FBFAF6;
+    margin: 30px;
+}
+.producto-nombre {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #3C2313;
+}
+.producto-precio {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color:#F0A83E;
+}
+
+/* Section formulario */
+
+.container-form {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+.container-form h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #3C2313;
+}
+.campo-form {
+    width: 340px;
+    height: 40px;
+    border-radius: 15px;
+    border: 0;
+    background-color: #3C2313;
+    padding: 10px;
+    margin: 10px;
+} 
+.campo-form::placeholder  {
+    color: #ffffff;
+    font-family:'Roboto', sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+}
+.container-botones-form{
+    height: 70px;
+    width: 250px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.submit-btn, .reset-btn {
+    width: 110px;
+    height: 34px;
+    border-radius: 18px;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color:#ffffff;
+}
+.submit-btn{
+    background-color:#8A8787;
+}
+.reset-btn {
+    background-color: #F0A83E;
+}
+
+/* Section suscripción */   
+
+.container-suscripcion {
+    padding: 30px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0A83E;
+}
+.container-suscripcion-text {
+    display: flex;
+}
+.container-suscripcion-text h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.container-suscripcion-text img{
+    margin: 0 15px;
+}
+.suscripcion-btn {
+    width: 80px;
+    height: 34px;
+    border-radius: 15px;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color:#ffffff;
+    background-color: #3C2313;
+}
+.campo-form-suscripcion {
+    width: 340px;
+    height: 40px;
+    border-radius: 15px;
+    border: 0;
+    padding: 10px;
+    margin: 10px;
+}
+.campo-form-suscripcion::placeholder {
+    color: #A0A0A0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+}
+
+/* Section contacto */
+
+.container-contacto { 
+    display: flex;  
+    position: relative;
+    align-items: center;
+    height: 300px;
+    background-color: #3C2313;
+    padding: 30px;
+}
+.logo-contacto {
+    width:166px;
+    height:23px;
+}
+.iconos-contacto {
+    display: flex;
+    flex-direction: column;
+}
+.iconos-contacto img {
+    margin: 7px;
+}
+.info-contacto h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff
+}
+.info-contacto h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: #8A8787;
+    margin-bottom: 40px;
+}
+.logo-contacto {
+    position: absolute;
+    right: 30px;
+    width:200px;
+    height:30px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    height: 30px;
+}
+footer p {
+    color:#ffffff;
+    font-family:'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
